@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Autocorrect Tool</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI-Driven Autocorrect Tool</h1>
+        
+        <div class="input-area">
+            <h3>Enter your text:</h3>
+            <textarea id="textInput" placeholder="Type or paste your text here..."></textarea>
+            
+            <div class="controls">
+                <button id="checkButton">Check Text</button>
+                <button id="clearButton">Clear All</button>
+                <button id="copyButton">Copy Corrected Text</button>
+            </div>
+        </div>
+        
+        <div class="output-area">
+            <h3>Suggested Corrections:</h3>
+            <div id="outputText" class="suggestion-area"></div>
+            
+            <h3>Word Suggestions:</h3>
+            <div id="suggestionContainer" class="suggestion-area"></div>
+            
+            <div class="stats-area">
+                <div id="stats">
+                    <p>Characters: 0 | Words: 0 | Errors detected: 0</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="settings-panel">
+            <h3>Settings</h3>
+            <div class="settings-option">
+                <input type="checkbox" id="realTimeCheck" checked>
+                <label for="realTimeCheck">Real-time checking</label>
+            </div>
+            <div class="settings-option">
+                <input type="checkbox" id="grammarCheck" checked>
+                <label for="grammarCheck">Grammar checking</label>
+            </div>
+            <div class="settings-option">
+                <input type="checkbox" id="spellingCheck" checked>
+                <label for="spellingCheck">Spelling checking</label>
+            </div>
+            <div class="settings-option">
+                <label for="sensitivity">Sensitivity:</label>
+                <select id="sensitivity">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>AI-Driven Autocorrect Tool | Internship Project</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
